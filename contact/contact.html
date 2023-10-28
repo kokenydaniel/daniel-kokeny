@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Daniel Kokeny</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="contact.css" />
+    <script
+      defer
+      src="https://kit.fontawesome.com/811f543052.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="contact.js"></script>
+    <link rel="icon" type="image/ico" href="/img/favicon.ico" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar bg-body px-5">
+        <a href="../index.html"
+          ><img src="../img/logo.jpg" alt="Logo" id="logo"
+        /></a>
+        <img src="../img/avataaars.png" alt="Me as an avatar" id="avatar" />
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link reset" href="#"
+              ><i class="fa-solid fa-arrow-rotate-left"></i
+            ></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html"
+              ><i class="fa-solid fa-x"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="text-center">
+      <h1 class="col-12 col-lg-8 col-xxl-4 mx-auto my-5 fw-lighter">
+        Thanks for taking the time to reach out. How can I help you today?
+      </h1>
+      <form
+        action="https://formspree.io/f/meqbnnqy"
+        method="POST"
+        class="row col-12 col-md-10 col-xl-8 col-xxl-5 px-5 px-md-0 mx-auto text-start"
+      >
+        <div class="input--container col-12 col-md-6 mb-3">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" class="w-100" required />
+        </div>
+        <div class="input--container col-12 col-md-6">
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email" class="w-100" required />
+        </div>
+        <div class="input--container col-12">
+          <label for="message">Message</label>
+          <input
+            name="message"
+            id="message"
+            class="w-100"
+            minlength="10"
+            required
+          />
+        </div>
+        <div class="d-flex justify-content-center mt-5">
+          <button id="btn--submit">Submit</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>

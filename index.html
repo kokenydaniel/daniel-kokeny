@@ -1,303 +1,378 @@
 <!DOCTYPE html>
 <html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daniel Kokeny | Personal Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      defer
+      src="https://kit.fontawesome.com/811f543052.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" type="image/ico" href="/img/logo.ico" />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kökény Dániel | Personal Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/811f543052.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/ico" href="/img/favicon.ico" />
-</head>
-
-<body>
-    <div id="main">
-        <section class="header">
-            <nav class="navbar navbar-expand-lg bg-header ">
-                <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Főoldal</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#about">Rólam</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#portfolio">Portfólió</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#contact">Kapcsolat</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="https://www.linkedin.com/in/danielkokeny"><i
-                                        class="fa-brands fa-linkedin"></i></a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="https://github.com/kokenydaniel"><i class="fa-brands fa-github"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-            <h1 class="h1-tag mb-5">
-                Üdvözlöm!
-                <br>
-                <em class="green-text name">Kökény Dániel</em>
-                <br>
-                <span class="frontend">vagyok, Frontend fejlesztő</span>
-            </h1>
-            <p class="p-tag">Frontend fejlesztés</p>
-            <a href="#portfolio" class="btn text-uppercase">Munkáim</a>
-        </section>
-        <section class="about col-10 offset-1 col-md-10" id="about">
-            <section>
-                <h2 class="h2-tag green-text font-title">Rólam</h2>
-                <p class="p-tag about-text">
-                    Frontend fejlesztést tanulok, ahol szeretek letisztult, reszponzív webhelyeket készíteni HTML,
-                    CSS, Bootstrap, Vanilla JavaScript és Angular használatával. Már régebb óta érdekel a web
-                    világa, hogy hogyan is lehet létrehozni gyors és gyönyörű weboldalakat. Korábbi tapasztalatom
-                    sajnos nincs benne, de 2023-ban beiratkoztam egy frontend fejlesztő tanfolyamra, hogy megkapjam
-                    az alapokat az induláshoz. Azóta több sikeres kisebb önálló és csapatprojektet hoztunk létre,
-                    amiben alkalmaztuk a tanult technológiákat. Mindezek mellett a szabadidőmben is tanulok, hogy
-                    méghatékonyabb legyek és új dolgokat tanuljak.
-                </p>
-                <a class="btn offset-3 offset-md-0" href="/static/media/Daniel-kokeny.pdf" download="Daniel-Kokeny"><i
-                        class="fa-solid fa-file-arrow-down"></i> Önéletrajz letöltése</a>
-            </section>
-            <h3 class="h3-tag">Néhány technológia, amivel dolgoztam:</h3>
-            <ol class="stack-section col-12 col-md-10 offset-xxl-2">
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>Bootstrap</li>
-                <li>JavaScript ES6+</li>
-                <li>TypeScript</li>
-                <li>Node.js</li>
-                <li>RESTful API</li>
-                <li>MongoDB</li>
-                <li>Github</li>
-                <li>Visual Studio Code</li>
-            </ol>
-        </section>
-        <section class="portfolio p-5 col-10 col-md-10 offset-1" id="portfolio">
-            <section class="portfolio-text">
-                <h2 class="h2-tag title-font green-text font-title">Portfólióm</h2>
-                <p class="p-tag">
-                    Sok időt töltöttem különböző projektekkel. Imádok mindent a nulláról csinálni. Íme néhány
-                    kedvencem, amelyek összefoglalják tudásomat. Számos kisebb projektet készítettem a tanfolyamon és
-                    mindemellet keresem a kihívásokat, hogy megtanuljam az alapokat és fejlődhessek. Több kisebb
-                    projektem is van, amiben a Javascript a hangsúlyos, illetve a TypeScript. Megnézheti őket a
-                    <span>
-                        <a class="green-text" href="https://github.com/kokenydaniel">Githubon</a>
-                    </span>
-                </p>
-            </section>
-            <section class="portfolio-grid row ">
-                <section class="project row col-12 mb-5">
-                    <section class="my-auto col-xl-6 col-xxl-5 offset-xxl-1">
-                        <img src="img/HikingApp.jpg" alt="" class="img-fluid">
-                    </section>
-                    <section class="project-description col-xl-6 col-xxl-5">
-                        <p class="p-tag">
-                            Ez a túra weboldal egy feladat keretében készült, ahol be kellett mutatnom a hobbimat egy
-                            weboldal formájában. Mivel szeretek túrázni, ezért nem volt kérdés, hogy milyen témát
-                            választok. Az oldal elkészítése során meg kellett oldani a reszponzív megjelenést minden
-                            méretben, amire törekedtem mindvégig.
-                        </p>
-                        <section class="project-meta-stack d-block">
-                            <p class="d-inline">
-                                < html />
-                            </p>
-                            <p class="d-inline">
-                                < css />
-                            </p>
-                            <p class="d-inline">
-                                < Bootstrap />
-                            </p>
-                        </section>
-                        <section class="project-links d-block m-3">
-                            <a href="https://hiking-app-alpha.vercel.app" target="_blank">
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            </a>
-                            <a href="https://github.com/kokenydaniel/HikingApp" target="_blank">
-                                <i class="fa-brands fa-github"></i>
-                            </a>
-                        </section>
-                    </section>
-                </section>
-                <hr>
-                <section class="project row col-12">
-                    <section class="project-description col-xl-6 offset-xxl-1">
-                        <p class="p-tag">
-                            A planetCare Technologies Kft. egy projektfeladat volt, amiben több társammal együtt kellett
-                            összedolgozni és létrehozni egy weboldalt, ami a környezetszennezésre hívja fel a figyelmet.
-                            Ebben a témában mi a technológiák a környezetvédelembent választottuk, mert úgy gondoljuk,
-                            hogy aktuális és sokat lehet tenni vele a bolygóért.
-                            Fontos szempont volt, hogy reszponzív legyen és természetközeli színvilágot használjunk.
-                            Mind tartalmilag, mind felépítésben törekedtünk az egyszerűségre és átláthatóságra. A közös
-                            munka során az Én feladatom volt a Főoldal problémák section, a tehetünk ellene card-ok,
-                            illetve az aloldalak mind szerkezeti és tartalmi feltöltése. A projektet GitHub
-                            felhasználásával készítettük el WireFrame alapján.
-                        </p>
-                        <section class="project-meta-stack d-block">
-                            <p class="d-inline">
-                                < html />
-                            </p>
-                            <p class="d-inline">
-                                < css />
-                            </p>
-                            <p class="d-inline">
-                                < Bootstrap />
-                            </p>
-                            <p class="d-inline">
-                                < GitHub />
-                            </p>
-                        </section>
-                        <section class="project-links d-block m-3">
-                            <a href="http://ruander.bertalanbarta.hu" target="_blank">
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            </a>
-                            <a href="" target="_blank">
-                                <i class="fa-brands fa-github"></i>
-                            </a>
-                        </section>
-                    </section>
-                    <section class="my-auto col-xl-6 col-xxl-5">
-                        <img src="img/PlanetCareTechnologies.jpg" alt="" class="img-fluid">
-                    </section>
-                </section>
-                <hr>
-                <section class="project row col-12 mb-5">
-                    <section class="my-auto col-xl-6 col-xxl-5 offset-xxl-1">
-                        <img src="img/weatherApp.jpg" alt="" class="img-fluid">
-                    </section>
-                    <section class="project-description col-xl-6 col-xxl-5">
-                        <p class="p-tag">
-                            Az első API-s projektem, ahol az OpenWeather API-t használtam. Hely alapján lekérdezhető az
-                            aktuális időjárás bárhonnan. Szerettem ezt a kis prjektet, mert sokat tanultam belőle, mind
-                            az API használatban és a repsonzivitásban.
-                        </p>
-                        <section class="project-meta-stack d-block">
-                            <p class="d-inline">
-                                < API />
-                            </p>
-                            <p class="d-inline">
-                                < html />
-                            </p>
-                            <p class="d-inline">
-                                < Bootstrap />
-                            </p>
-                        </section>
-                        <section class="project-links d-block m-3">
-                            <a href="https://kokenydaniel.github.io/Weather-App/" target="_blank">
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            </a>
-                            <a href="https://github.com/kokenydaniel/Weather-App" target="_blank">
-                                <i class="fa-brands fa-github"></i>
-                            </a>
-                        </section>
-                    </section>
-                </section>
-                <hr>
-                <section class="project row col-12 mb-5">
-                    <section class="project-description col-xl-6 offset-xxl-1">
-                        <p class="p-tag">
-                            Egy nagyobb projektem volt a Blissful Zen & Meditation Sanctuary oldal, ahol sokat tanultam az Angular hassználatáról és lehetőségeiről. Az Angularnak köszönhetően sikerült mégtöbbet gyakorolnom a Typescriptet, amit fel is használtam az oldal létrehozása során. Közel áll hozzám a téma, így örömmel készítettem el ezt a single page-t.
-                        </p>
-                        <section class="project-meta-stack d-block">
-                            <p class="d-inline">
-                                < Angular />
-                            </p>
-                            <p class="d-inline">
-                                < Typescript />
-                            </p>
-                            <p class="d-inline">
-                                < Bootstrap />
-                            </p>
-                        </section>
-                        <section class="project-links d-block m-3">
-                            <a href="https://blissful-zen-yoga.vercel.app" target="_blank">
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            </a>
-                            <a href="https://github.com/kokenydaniel/Blissful-Zen-Yoga" target="_blank">
-                                <i class="fa-brands fa-github"></i>
-                            </a>
-                        </section>
-                    </section>
-                    <section class="my-auto col-xl-6 col-xxl-5">
-                        <img src="img/yogaSanctuary.jpg" alt="" class="img-fluid">
-                    </section>
-                </section>
-                <hr>
-                <section class="project row col-12">
-                    <section class="my-auto col-xl-6 col-xxl-5 offset-xxl-1">
-                        <img src="img/ratingApp.jpg" alt="" class="img-fluid">
-                    </section>
-                    <section class="project-description col-xl-6 col-xxl-5">
-                        <p class="p-tag">
-                            Ezt a kisebb feladatot a FrontendMentor oldalra készítettem, ahol egy értékelő alkalmazáést kellett készyíteni. Ebben a Javascript volt a hangsúlyos. Itt is fontos volt a rreszponzivitás és a platformfüggetlenség. Szeretek ilyen kisebb projekteket csinálni, mert segít abban, hogy ne felejtsem el az alapokat.
-                        </p>
-                        <section class="project-meta-stack d-block">
-                            <p class="d-inline">
-                                < html />
-                            </p>
-                            <p class="d-inline">
-                                < css />
-                            </p>
-                            <p class="d-inline">
-                                < Javascript />
-                            </p>
-                        </section>
-                        <section class="project-links d-block m-3">
-                            <a href="https://kokenydaniel.github.io/Interactive-rating-component-frontendmentor/" target="_blank">
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            </a>
-                            <a href="https://github.com/kokenydaniel/Interactive-rating-component-frontendmentor" target="_blank">
-                                <i class="fa-brands fa-github"></i>
-                            </a>
-                        </section>
-                    </section>
-                </section>
-            </section>
-            <section class="more-project">
-                <p class="p-tag more-project-text">Ha a többi munkám is érdekli, akkor </p>
-                <a href="https://github.com/kokenydaniel?tab=repositories" class="btn offset-3 offset-md-0">Nézze
-                    meg!</a>
-            </section>
-        </section>
-        <section class="contact p-5 col-md-10 col-xl-12 col-xxl-6 offset-xxl-1" id="contact">
-            <h2 class="h2-tag title-font green-text font-title">Kapcsolat</h2>
-            <p class="p-tag">
-                Ha felkeltettem az érdeklődését, mindig nyitott vagyok új lehetőségekre és érdekes projektekre! Ha
-                bármilyen egyéb kérése vagy kérdése van webfejlesztéssel kapcsolatban, forduljon hozzám bizalommal.
-            </p>
-            <a href="mailto:kokeny.daniel@gmail.com" class="btn">Email</a>
-        </section>
-        <div id="footer">
-            <a href="https://github.com/kokenydaniel" target="_blank">Készítette: Kökény Dániel ©2023</a>
-            <div class="social-links d-block">
-                <a href="https://www.linkedin.com/in/danielkokeny"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/kokenydaniel"><i class="fa-brands fa-github"></i></a>
-            </div>
-            <p class="text-center">
-                < kokeny.daniel@gmail.com />
-            </p>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body px-5">
+        <div class="container-fluid">
+          <img src="img/logo.jpg" alt="" id="logo" />
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#portfolio">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="/static/media/Daniel_Kokeny_CV_EN.pdf"
+                  download="Daniel-Kokeny-Resume"
+                  >Resume<i class="fa-solid fa-arrow-down"></i
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link btn-nav" href="contact/contact.html"
+                  >Say Hello</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
-    </div>
-
-
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-        crossorigin="anonymous"></script>
-</body>
-
+      </nav>
+      <section class="header">
+        <h1 class="mt-5">Frontend Developer</h1>
+        <p>
+          I design and code beautifully simple things, and I love what I do.
+        </p>
+        <img id="avatar" src="img/avataaars.png" alt="" />
+      </section>
+      <section class="about col-12" id="about">
+        <div class="custom-shape-divider-top-1698309399">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M1200 0L0 0 598.97 114.72 1200 0z"
+              class="shape-fill"
+            ></path>
+          </svg>
+        </div>
+        <section class="w-100">
+          <h3>Hi, I’m Daniel. Nice to meet you.</h3>
+          <p class="p-tag about-text col-12 col-md-10 col-xl-6 mx-auto">
+            I completed the Frontend development course this year, because I
+            like to create clean and responsive pages and I am motivated by
+            continuous technological development. I'm dedicated and curious, and
+            I'm constantly working to be even better!
+          </p>
+        </section>
+      </section>
+    </header>
+    <main>
+      <section id="stack" class="stack">
+        <div class="stack-box row col-11 col-lg-9 text-center mx-auto">
+          <div class="col-12 col-md-4 box--1">
+            <div class="stack--img">
+              <i class="fa-solid fa-layer-group"></i>
+            </div>
+            <h4 class="">Designer</h4>
+            <p>
+              I always strive for a simple structure, a clean look and
+              thoughtful interactions.
+            </p>
+            <p class="stack-title mb-0">Design Tools</p>
+            <ul>
+              <li>Figma</li>
+              <li>Font Awesome</li>
+              <li>Google Fonts</li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-4 box--2">
+            <div class="stack--img"><i class="fa-solid fa-terminal"></i></div>
+            <h4>Frontend Developer</h4>
+            <p>
+              I like to code things from scratch, and enjoy bringing ideas to
+              life in the browser.
+            </p>
+            <p class="stack-title mb-0">Languages I speak</p>
+            <p>HTML, CSS, Sass, JavaSScript, TypeScript, Node.js, Git</p>
+            <p class="stack-title mb-0">Dev Tools</p>
+            <ul>
+              <li>Bootstrap</li>
+              <li>Github</li>
+              <li>Vercel</li>
+              <li>Visual Studio Code</li>
+              <li>MongoDB</li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-4 box--3">
+            <div class="stack--img"><i class="fa-solid fa-book-open"></i></div>
+            <h4 class="">Student</h4>
+            <p>
+              I never stop learning, so I am constantly training myself in the
+              latest technologies
+            </p>
+            <p class="stack-title mb-0">Technologies I'm still learning</p>
+            <ul>
+              <li>Angular</li>
+              <li>React</li>
+              <li>Redux</li>
+              <li>Tailwind</li>
+              <li>Node.js</li>
+              <li>MondogDB</li>
+              <li>Express</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="portfolio text-center" id="portfolio">
+        <h3 class="recent--work-title">My Recent Work</h3>
+        <p class="mb-5 p-2">
+          Here are some of my previous projects that I have worked on. Want to
+          see more?
+          <a href="/contact/contact.html">Email me</a>.
+        </p>
+        <div class="row mb-md-5" id="projects">
+          <div class="project">
+            <img src="img/bankist.png" alt="Bankist" class="img-fluid" />
+            <div class="overlay">
+              <p>
+                Bankist: A fictional online bank. You have the possibility to
+                log into the account and use several functions, just like in a
+                real bank!
+              </p>
+              <div class="project-link--section">
+                <a
+                  class="project--link"
+                  href="https://kokenydaniel.github.io/Bankist/"
+                  target="_blank"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+                <a
+                  class="project--link"
+                  href="https://github.com/kokenydaniel/Bankist"
+                  target="_blank"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="project">
+            <img src="img/mapty.png" alt="Mapty" class="img-fluid" />
+            <div class="overlay">
+              <p>
+                Mapty: Map application made with JavaScript for storing
+                workouts. It was an exciting and a really challenging task
+              </p>
+              <div class="project-link--section">
+                <a
+                  class="project--link"
+                  href="https://kokenydaniel.github.io/Mapty/"
+                  target="_blank"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+                <a
+                  class="project--link"
+                  href="https://github.com/kokenydaniel/Mapty"
+                  target="_blank"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="project">
+            <img
+              src="img/blissful-zen.png"
+              alt="Blissful Zen and Yoga"
+              class="img-fluid"
+            />
+            <div class="overlay">
+              <p>
+                Blissful Zen Yoga: This is my first Angular project, what is a
+                Yoga and Meditation Sanctuary page with events prices and
+                more...
+              </p>
+              <div class="project-link--section">
+                <a
+                  class="project--link"
+                  href="https://blissful-zen-yoga.vercel.app"
+                  target="_blank"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+                <a
+                  class="project--link"
+                  href="https://github.com/kokenydaniel/Blissful-Zen-Yoga"
+                  target="_blank"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="project">
+            <img
+              src="img/weather-app.png"
+              alt="Weather App"
+              class="img-fluid"
+            />
+            <div class="overlay">
+              <p>
+                Weather Today: This is my first API project, where you can check
+                your city weather and humidity, feels like and more...
+              </p>
+              <div class="project-link--section">
+                <a
+                  class="project--link"
+                  href="https://kokenydaniel.github.io/Weather-App/"
+                  target="_blank"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+                <a
+                  class="project--link"
+                  href="https://github.com/kokenydaniel/Weather-App"
+                  target="_blank"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="project">
+            <img src="img/pig-game.png" alt="Pig Dice Game" class="img-fluid" />
+            <div class="overlay">
+              <p>
+                Pig game: The Pig Game - The objective of the game is to be the
+                first player to reach 100 points.
+              </p>
+              <div class="project-link--section">
+                <a
+                  class="project--link"
+                  href="https://kokenydaniel.github.io/Pig-game/"
+                  target="_blank"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+                <a
+                  class="project--link"
+                  href="https://github.com/kokenydaniel/Pig-game"
+                  target="_blank"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="project">
+            <img
+              src="img/guess-my-number.png"
+              alt="My number"
+              class="img-fluid"
+            />
+            <div class="overlay">
+              <p>
+                Guess my number: A number-guessing game where you get feedback
+                through dom manipulation
+              </p>
+              <div class="project-link--section">
+                <a
+                  class="project--link"
+                  href="https://kokenydaniel.github.io/Guess-My-Number/"
+                  target="_blank"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+                <a
+                  class="project--link"
+                  href="https://github.com/kokenydaniel/Guess-My-Number"
+                  target="_blank"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a
+          href="https://github.com/kokenydaniel?tab=repositories"
+          target="_blank"
+          class="btn mt-5 mb-5"
+          ><i class="fa-brands fa-github"></i> See more on GitHub</a
+        >
+      </section>
+    </main>
+    <footer>
+      <div
+        class="contact-box row col-11 col-md-11 col-lg-10 flex-column flex-md-row"
+      >
+        <div class="col-12 col-md-4 mb-3 mb-md-0 text-center">
+          <h3>Start a project</h3>
+        </div>
+        <div class="col-12 col-md-4 mb-3 mb-md-0 text-center">
+          <p>
+            Are you interested in working together? Contact me at any of my
+            contacts!
+          </p>
+        </div>
+        <div class="col-12 col-md-4 text-center">
+          <a href="contact/contact.html" class="btn-contact"
+            ><i class="fa-solid fa-handshake-simple"></i> Let's do this</a
+          >
+        </div>
+      </div>
+      <div class="footer--text">
+        <p class="mb-5 text-center col-7">
+          Everyday life is like programming, I guess. If you love something, you
+          can put beauty into it
+        </p>
+        <div class="footer--social-links mb-5">
+          <a href="https://www.linkedin.com/in/danielkokeny"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/kokenydaniel"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a href="contact/contact.html"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
+        </div>
+        <div class="copyright mb-3">
+          <a href="https://github.com/kokenydaniel" target="_blank"
+            >Handcrafted by me <i class="fa-regular fa-copyright"></i> 2023</a
+          >
+        </div>
+        <div class="made--with">
+          <a href="https://getbootstrap.com" class="text-center"
+            >made with <img src="img/bootstrap-logo.svg" alt=""
+          /></a>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
