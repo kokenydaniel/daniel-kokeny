@@ -11,6 +11,12 @@
   --dark-blue: #141c3a;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: Inter, sans-serif;
   background: var(--white);
@@ -260,7 +266,11 @@ h4 {
   align-items: center;
   padding: 45px 20px;
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px var(--dark-blue);
-  transform: translateY(-210px);
+  /* transform: translateY(-210px); */
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-47%, -30%);
 }
 
 .btn-contact {
@@ -278,6 +288,7 @@ h4 {
 }
 
 footer {
+  position: relative;
   background-color: var(--primary);
   color: var(--white);
   font-family: Poppins;
@@ -293,12 +304,13 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: absolute;
+  top: 40%;
 }
 
 .footer--social-links {
   display: flex;
 }
-
 .footer--social-links a {
   display: flex;
   flex-direction: column;
@@ -321,8 +333,16 @@ footer {
   font-size: 20px;
 }
 
+.copyright {
+  display: inline;
+}
+
 .copyright a {
   color: var(--white);
+}
+
+.made--with {
+  display: inline;
 }
 
 .made--with a {
@@ -361,31 +381,29 @@ footer {
     height: 248px;
   }
 
-  .contact-box {
-    transform: translateY(-100px);
-  }
+  /* .contact-box {
+    transform: translateY(-80px);
+  } */
 
   footer {
     height: 110vh;
   }
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 767px) {
   .header {
     height: 90vh;
   }
 
-  .contact-box {
-    transform: translateY(-220px);
-  }
+  /* .contact-box {
+    transform: translateY(-120px);
+  } */
 
   footer {
     height: 80vh;
     padding-bottom: 1rem;
   }
-}
 
-@media only screen and (max-width: 767px) {
   .box--1 {
     border-right: none;
     border-bottom: 2px solid var(--border);
@@ -403,9 +421,9 @@ footer {
     text-align: center;
   }
 
-  .contact-box {
-    transform: translateY(-180px);
-  }
+  /* .contact-box {
+    transform: translateY(-100px);
+  } */
 
   footer {
     height: 80vh;
@@ -415,15 +433,11 @@ footer {
 
 @media only screen and (min-width: 769px) {
   .header {
-    height: 50vh;
-  }
-
-  .contact-box {
-    transform: translateY(-220px);
+    height: 60vh;
   }
 
   footer {
-    height: 80vh;
+    height: 90vh;
     padding-bottom: 1rem;
   }
 }
